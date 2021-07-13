@@ -1,0 +1,223 @@
+/* ----------------------
+*common style*
+---------------------- */
+body{
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+.container-title{
+    color: #562EFF;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* ---------
+Header styles
+------------- */
+.navigation{
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    
+}
+.left-side img{
+    width: 41px;
+height: 51px;
+padding: 10px;
+}
+.left-side p{
+    color: white;
+    position: absolute;
+    left: 290px;
+    top:0px; 
+    font-size: 25px;
+}
+.right-side{
+    padding: 25px;
+}
+.right-side a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 36px;
+}
+.profile{
+    padding: 10px;
+}
+/* ----------
+First container first part style
+------------- */
+.container{
+    background-color: white;
+    width: 870px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+
+.top-players{
+    margin: 40px;
+}
+
+
+.top-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+
+.player img{
+    width: 56px;
+    height: 56px;
+    padding-right: 5px;
+}
+.player{
+    display: flex;
+   
+    
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+}
+
+
+/* ----------
+First container second part style
+------------- */
+.top-blogs{
+    margin: 40px;
+}
+.top-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 50px;
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+.blog{
+    display: flex;
+    font-size: 15px;
+    
+}
+.blog-information{
+    margin-left: 5px;
+    
+}
+.blog-information>p>a{
+    text-decoration: none;
+    color: #562EFF;
+}
+/* ----------
+Second container style
+------------- */
+.packet-course{
+    margin: 40px;
+}
+
+
+.single-course{
+
+    /* display: flex; or */
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+}
+
+
+.course-element img{
+    width: 224px;
+height: 104px;
+}
+
+
+.course-element{
+    border: 2px solid gainsboro;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gainsboro;
+  
+}
+
+.course-info-1>a{
+    text-decoration: none;
+    color: #ED6B4F;
+    font-size: 15px;
+    
+
+}
+
+.course-info-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.empty{
+    color: #AEAEAE;
+}
+
+.clock-style{
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    padding: 5px;
+    border-radius: 15px;
+}
+footer{
+    font-size: 10px;
+    font-weight: 200;
+}
+
+/* --------
+Responsive for mobile
+---------------- */
+
+@media only screen and (max-width:688px) {
+   .container{
+       width: 100%;
+       margin-left:2.5% ;
+      
+   }
+    .navigation{
+       width: 400px;
+       display: flex;
+       flex-direction: column;
+       
+   }
+   .left-side p{
+    left: 100px;
+    top:0px; 
+   }
+   .profile{
+       position: absolute;
+       left: 300px;
+       top: 5px;
+   }
+
+.top-player{
+    display: flex;
+       flex-direction: column;
+}
+.top-blog{
+    display: flex;
+       flex-direction: column;
+}
+.single-course{
+    display: flex;
+       flex-direction: column;
+}
+}
